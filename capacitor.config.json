@@ -1,0 +1,13 @@
+{
+  "appId": "com.smartCar.app",
+  "appName": "smart-car",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {}
+}
