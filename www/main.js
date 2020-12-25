@@ -15,12 +15,11 @@ setInterval(() => {
     }
 }, 1)
 getLocation()
+
 function getLocation() {
     if (navigator.geolocation) {
 
         setInterval(() => {
-            navigator.geolocation.getCurrentPosition(pos)
-            navigator.geolocation.getCurrentPosition(pos)
             navigator.geolocation.getCurrentPosition(pos)
         },500)
         
@@ -31,15 +30,8 @@ function getLocation() {
     }
 }
 
-var speeds = new Array();
 
-var i = 0;
 function pos(location) {
     
-    speeds[i] = location.coords.speed;
-    i++;
-    if(i == 3){
-        i = 0;
-        Tacho.innerHTML = ((speeds[0] + speeds[1] + speeds[2]) / 3) * 3.6;
-    }
+    Tacho.innerHTML = location.coords.speed
 }
